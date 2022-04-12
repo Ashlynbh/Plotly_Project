@@ -88,7 +88,7 @@ d3.json("samples.json").then(function(data){
 });
 ///NAME SELECTOR
 function dropdown() {
-  d3.selectAll("#selDataset").on("change", updatePlotly);
+  d3.selectAll("#selDataset").on("change", dropdown);
   var dropdown = d3.select("#selDataset")
   d3.json("samples.json").then(function(data){
       var names = data.names;
